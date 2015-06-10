@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Mi aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/extra.css" /> 
+        
+        
+
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <script src="phonegap.js" type="text/javascript"></script>
+ </head>
+
+ <body>
+ 
+ <!-- Principal -->
+ <div data-role="page" id="principal" >   
+  <div data-role="header">
+    <h1>¡VAMOS A JUGAR!</h1>
+  </div>
+
+ <div data-role="main" class="ui-content">
+   <div align="center">
+    <div style="width:50%" data-role="controlgroup" data-type="vertical">
+     <div id="jugador" style="border:1px solid #009">
+   
+     </div>
+     <a href="#tablero" id="btnjugar" class="ui-btn">Jugar</a>
+      <a href="#config" id="btnconfig" class="ui-btn   ui-icon-gear ui-btn-icon-right ">Configurar</a>
+    </div>
+   </div>
+  </div>
+
+  <div data-role="footer">
+    <h1>@Mariana Sanchez Lagunas </h1>
+  </div>
+ </div>  
+ <!-- Principal -->
+ 
+  <!-- Tablero -->
+ <div data-role="page" id="tablero" >   
+  <div data-role="main" class="ui-content">
+   <div id="B1" style="background-color:#00F;" class="cuadro">&nbsp;</div>
+    <div id="B2" style="background-color:#F00;" class="cuadro">&nbsp;</div>
+     <div id="B3" style="background-color:#0F0;" class="cuadro">&nbsp;</div>
+     <div id="B4" style="background-color:#FF0;" class="cuadro">&nbsp;</div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h3><div id="pantalla" > Pulsó: </div></h3>
+  </div>
+ </div>  
+ <!-- Tablero -->
+ 
+  <!-- Configuracion -->
+ <div data-role="page" id="config" >   
+  <div data-role="header">
+    <h1>Configuracion</h1>
+  </div>
+
+ <div data-role="main" class="ui-content">
+   <div align="center">
+    <div style="width:50%" data-role="controlgroup" data-type="vertical">
+     <input type="text" placeholder="Usuario" id="txtnombre" >
+     <a href="#" id="btnguardar" class="ui-btn ui-icon-user-black  ui-btn-icon-right ">Guardar</a>
+    </div>
+   </div>
+  </div>
+
+  <div data-role="footer">
+   <div align="center">
+    <div style="width:50%" data-role="controlgroup" data-type="vertical">
+    <a href="#principal" id="btninicio" class="ui-btn">Inicio</a>
+    </div>
+   </div>
+  </div>
+ </div>  
+ <!-- Configuracion -->
+
+ </body>
+</html> 
